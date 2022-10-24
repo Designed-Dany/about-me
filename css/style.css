@@ -43,11 +43,10 @@ border-radius: 5px;
     margin-top: 53px;
     display: flex;
     justify-content: space-evenly;
-    /* font-size: 36px; */
     line-height: 44px;
     list-style-type: none;
     font-weight: 100;
-    font-size: calc(12px + 12 * (100vw / 1200));
+    font-size: 28px
 }
 
 li:hover {
