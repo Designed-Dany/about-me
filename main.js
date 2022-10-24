@@ -2,7 +2,8 @@ let offset = 0; // смещение от левого края;
 const sliderLine = document.querySelector('.slider-line');
 let container = document.querySelector('.container');
 let alertError = document.querySelector('.error');
-
+let inputEmail = document.querySelector('.input-email');
+let formInputs = document.querySelectorAll('.js-input');
 document.querySelector('.arrow-left-btn').addEventListener('click', function() {
     offset = offset + 750;
     if (offset > 2000) {
@@ -23,6 +24,7 @@ alertError.addEventListener('click', function () {
     alert('Ошибка - это повод хорошо подумать:)')
 })
 
+// выпадающий список
 document.addEventListener('DOMContentLoaded', hiddenCloseclick());
 document.getElementById('click-to-hide').addEventListener('click', hiddenCloseclick);
 
@@ -33,3 +35,7 @@ function hiddenCloseclick() {
 	  } else {
 	 x.style.display = "none"}
     };
+
+
+
+    

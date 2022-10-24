@@ -33,27 +33,38 @@ border-radius: 5px;
 }
 
 /* start header styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
 .header__menu {
     margin-top: 53px;
     display: flex;
     justify-content: space-evenly;
-    font-size: 36px;
+    /* font-size: 36px; */
     line-height: 44px;
     list-style-type: none;
     font-weight: 100;
+    font-size: calc(14px + 12 * (100vw / 1200));
 }
 
 li:hover {
     color: #bd3614;
 }
 
+li {
+    color: black;
+}
+
 .arrow-right-btn {
-    margin-left: 270px;
+    margin-right: 100px;
     font-size: 25px;
 }
 
 .arrow-left-btn {
-    margin-right: 150px;
+    margin-left: 100px;
     font-size: 25px;
 }
 
@@ -73,13 +84,11 @@ button {
 }
 
 .slider {
-    width: 740px;
-    height: 700px;
+    max-width: 740px;
     margin: 0 auto;
     overflow: hidden;
 }
 .slider-line {
-    margin: 0 auto;
     display: flex;
     position: relative;
     left: 0;
@@ -105,6 +114,12 @@ h1 {
     text-align: center; 
 }
 
+.photo-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 280px;
+}
+
 .photo {
     display: flex;
     flex-direction: column;
@@ -112,41 +127,27 @@ h1 {
 
 .text {
     font-weight: 300;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 24px;
+    line-height: 29px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-right: 250px;
+    margin-right: 90px;
 }
 
 .hello-text {
-    margin-bottom: 47px;
+    margin-bottom: 22px;
 }
 
-.photo-text {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 220px;
-}
-
-.fire {
-    width: 67px;
-    height: 70px;
-}
 .fire-text {
-    padding-top: 16px;
-    font-size: 36px;
-    line-height: 44px;
-}
-
-.block-fire {
-    display: flex;
-    padding: 47px 0px 36px 0px;
+    font-weight: 400;
+    padding: 36px 0px 36px 0px;
+    font-size: 32px;
+    line-height: 39px;
 }
 
 .new-question {
-    padding-bottom: 44px;
+    padding-bottom: 14px;
 }
 
 .frontend-block {
@@ -156,32 +157,36 @@ h1 {
 }
 
 h3 {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
     font-weight: 300;
-    font-size: 66px;
-    line-height: 58px;
-    padding-left: 81px;
 }
 
 .under_text_front {
     font-weight: 300;
-    font-size: 36px;
-    line-height: 44px;
-    padding: 73px 0px 0px 112px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding: 73px 0px 0px 0px;
 }
 .one-shot {
-    font-size: 36px;
-    line-height: 44px;
     font-weight: 300;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
     color: #BA1E1E;
-    padding: 109px 0px 0px 166px;
+    padding-top: 109px;
 }
 
 .phone-photo {
     display: block;
+    width: 500px;
 }
 
 .notebook {
     margin-left: 20px;
+    width: 230px;
 }
 
 .book_and_notebook {
@@ -207,14 +212,14 @@ h3 {
 }
 
 .form-pic {
-   margin: 110px 0px 111px 134px; 
+   margin: 110px 0px 111px 44px; 
 }
 
 .subtext-project {
     font-weight: 300;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 29px;
     text-align: center;
-    font-size: 36px;
     margin-bottom: 45px;
 }
 
@@ -241,23 +246,289 @@ h3 {
 }
 
 .experience {
+    
     text-align: left;
     font-weight: 300;
-    font-size: 32px;
-    line-height: 39px;
-    margin-left: 550px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 100px;
 }
 
+.look-me {
+    text-decoration: underline;
+}
 /* end my-project styles */
 
+/* start footer styles  */
+
+footer {
+    margin-top: 373px;
+}
+
+.contact-me {
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+.reserved-text {
+    color: white;
+    margin: 30px 0px 0px 10px;
+}
+
+.social {
+    display: block;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+    padding-top: 41px;
+}
+
+.social-send {
+    display: flex;
+}
+
+.input-social {
+    cursor: pointer;
+    margin: 36px;
+    display: flex;
+    width: 208px;
+    height: 48px;
+    border-radius: 47px;
+    background-color: #fff;
+}
 
 
 
+.social-right {
+    padding-right: 6px;
+}
+
+.logo {
+    margin: 70px 150px 0px 150px;
+}
+
+.send-email {
+    padding-top: 39px;
+    display: flex;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+}
+
+.input-email {
+    font-size: 25px;
+    padding: 6px;
+    margin: 36px;
+    width: 212px;
+    height: 43px;
+    border-radius: 18px;
+    background-color: #fff;
+}
 
 
+.send-btn {
+    width: 50px;
+    height: 43px;
+    border-radius: 11px;
+}
 
+.send-btn:hover {
+    background-color: rgb(182, 93, 93);
+}
 
+/* end footer styles  */
 
+@media screen and (max-width: 1200px) {
 
+    .container {
+        width: 970px;
+    }
 
+    .figures {
+        display: none;
+    }
 
+    .form-pic {
+        width: 550px;
+    }
+
+    .social-text {
+        font-size: 26px;
+        margin-left: 30px;
+    }
+
+    .input-social {
+        width: 174px;
+        height: 39px;
+    }
+    
+    .size-icon-footer {
+        width: 45px;
+    }
+
+    .github {
+        width: 40px;
+    }
+
+    .send-email-text {
+        font-size: 26px;
+        margin-left: 30px;
+    }
+
+    .send-btn {
+        width: 47px;
+        height: 33px;
+        border-radius: 37px;
+    }
+
+    .input-email {
+        width: 175px;
+        margin: 30px;
+    }
+
+    .reserved-text {
+        margin: 22px 0px 0px 10px;
+        font-size: 15px;
+    }
+
+    .logo {
+        margin: 70px 50px 0px 50px;
+    }
+
+    .social-send {
+       margin-left: 50px
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    .container {
+        width: 750px;
+    }
+
+    .text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hello-text {
+        margin-top: 80px;
+    }
+
+    .fire-text {
+        font-weight: 400;
+    }
+
+    .text-frontend {
+        margin-top: 80px;
+    }
+
+    .frontend-block {
+        display: block;
+    }
+
+    .book_and_notebook {
+        display: none;
+    }
+
+    .phone-photo {
+        margin: 0 auto;
+    }
+
+    .form-pic {
+        width: 550px;
+    }
+
+    .photo-text {
+        display: block;
+    }
+
+    .tur {
+        width: 550px;
+        margin: 0 auto;
+    }
+
+    .tur1 {
+        display: none;
+    }
+
+    .logo {
+        margin: 7px 0px 0px 0px;
+    }
+
+    .send-email-text {
+        font-size: 18px;
+    }
+
+    .social-text {
+        font-size: 18px;
+        margin-left: 48px;
+    }
+
+    .reserved-text {
+        font-size: 10px;
+    }
+
+    .input-email {
+        width: 106px;
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 767px)
+ {
+    /* .container {
+        width: none;
+    } */
+
+    .input-social {
+        width: 146px;
+        height: 39px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .form-pic {
+        width: 550px;
+    }
+
+    .social-send {
+        margin-left: 0px
+     }
+
+     .social-text {
+        font-size: 20px;
+        margin-left: 34px;
+     }
+
+     .size-icon-footer {
+        width: 38px;
+     }
+
+     .github {
+        width: 24px;
+     }
+
+     .send-email-text {
+        font-size: 15px;
+        margin-left: 8px;
+     }
+
+     .input-email {
+        width: 156px;
+        height: 38px;
+     }
+
+     .github {
+        width: 32px;
+     }
+
+     .send-btn {
+        width: 41px;
+        height: 27px;
+     }
+}

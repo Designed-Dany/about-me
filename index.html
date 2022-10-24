@@ -16,6 +16,7 @@
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#989898">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
 
@@ -23,19 +24,18 @@
     <header>
             <div class="container">
                 <ul class="header__menu">
-                    <a href="#"><li class="home">HOME</li></a>
+                    <a href=""><li class="home">HOME</li></a>
                     <a href="#about-me"><li class="abm">ABOUT ME</li></a>
                     <a href="#my-project"><li>MY PROJECT</li></a>
                     <a href="#"><li>CONTACT ME</li></a>
                  </ul>
-            </div>
              <div class="figures">
                 <button class="arrow-right-btn">Prev</button>
                 <div class="slider">
                     <div class="slider-line">
-                        <img src="svg/triangle1.jpg" width="700" alt="triangle">
-                        <img src="svg/Helix.jpg" width="700" alt="">
-                        <img src="svg/Cone.jpg" width="700" alt="">
+                        <img src="svg/triangle1.jpg" width="700" class="triangle1" alt="triangle">
+                        <img src="svg/Helix.jpg" width="700" class="helix" alt="">
+                        <img src="svg/Cone.jpg" width="700" class="cone" alt="">
                     </div>
                 </div>
                 <button class="arrow-left-btn">Next</button>
@@ -45,35 +45,34 @@
 
     <!-- Start About Me -->
     <section id="about-me" class="about-me">
-        <h1>ABOUT ME</h1>
-        <div class="photo-text">
-            <div class="photo">
-                <img src="img/tur.jpg" alt="">
-                <img src="img/tur1.jpg" alt="">
+        <div class="container">
+            <h1>ABOUT ME</h1>
+            <div class="photo-text">
+                <div class="photo">
+                    <img class="tur" src="img/tur.jpg" alt="">
+                    <img class="tur1" src="img/tur1.jpg" alt="">
+                </div>    
+                    <div class="text">
+                        <p class="hello-text">Привет, странственник сети я <br> тоже очень люблю <br> путешествовать по сети и <br> смотреть на разные сайты это <br> так затягивает неправда ли ? </p>
+                        <p>Любовь к путешествиям <br> у меня с самого детства,<br> с другом мы всегда <br> любили открывать новые <br> места в своем городе, <br> пробывать новые вкусы жвачек,<br> я это к чему.</p>
+                        <p class="fire-text">Путешествия это - жизнь</p>
+                        <p class="new-question">Искать что-то новое,<br> ломать себя, идти в <br> слепую, это был мой <br> выбор с детства.<br> Трудности только<br> закаляли мой характер.</p>
+                        <p>А еще я жутко любил<br> компьютер, но не <br>понимал куда заведет<br> меня эта любовь и тут<br> моему взору открылся....</p>
+                    </div>
             </div>
-            <div class="text">
-                <p class="hello-text">Привет, странственник сети я <br> тоже очень люблю <br> путешествовать по сети и <br> смотреть на разные сайты это <br> так затягивает неправда ли ? </p>
-                <p>Любовь к путешествиям <br> у меня с самого детства,<br> с другом мы всегда <br> любили открывать новые <br> места в своем городе, <br> пробывать новые вкусы жвачек,<br> я это к чему.</p>
-                <div class="block-fire">
-                    <img class="fire" src="svg/fire.svg" alt="fire-icon">
-                    <p class="fire-text">Путешествия это - жизнь</p>
+            <div class="frontend-block">
+                <div class="photo-frontend">
+                    <img class="phone-photo" src="img/phone.jpg" alt="">
+                    <div class="book_and_notebook">
+                        <img src="img/book.jpg" alt="">
+                        <img class="notebook" src="img/notebook.jpg" alt="">
+                    </div>
                 </div>
-                <p class="new-question">Искать что-то новое,<br> ломать себя, идти в <br> слепую, это был мой <br> выбор с детства.<br> Трудности только<br> закаляли мой характер.</p>
-                <p>А еще я жутко любил<br> компьютер, но не <br>понимал куда заведет<br> меня эта любовь и тут<br> моему взору открылся....</p>
-            </div>
-        </div>
-        <div class="frontend-block">
-            <div class="text-frontend">
-                <h3>Frontend developer</h3>
-                <p class="under_text_front">И тогда я понял вот в <br> чем я хочу расти и <br> развиваться, вставать<br> каждый день изучая <br> кучу материала, не <br> потому что так надо, а <br> <span class="green-line">потому что хочу быть</span>  <br> <span class="green-line">лучшим из лучших.</span></p>
-                <p class="under_text_front pad">Для меня фронтенд <br> глаза и чувства <br> человека, а не просто<br> код. Это - разработка <br> правильного и понятного<br> кода, общение с<br> компьютером, я нашел <br> себя :)</p>
-                <p class="one-shot">One shot my heart...</p>
-            </div>
-            <div class="photo-frontend">
-                <img class="phone-photo" src="img/phone.jpg" alt="">
-                <div class="book_and_notebook">
-                    <img src="img/book.jpg" alt="">
-                    <img class="notebook" src="img/notebook.jpg" alt="">
+                <div class="text-frontend">
+                    <h3>Frontend developer</h3>
+                    <p class="under_text_front">И тогда я понял вот в чем я хочу <br> расти и  развиваться, вставать<br> каждый день изучая  кучу материала, <br> не  потому что так надо, а  <span class="green-line">потому что<br> хочу быть</span> <span class="green-line">лучшим из лучших.</span></p>
+                    <p class="under_text_front pad">Для меня фронтенд глаза и чувства <br> человека, а не просто код.<br> Это - разработка правильного и понятного кода,<br> общение с компьютером, я нашел  себя :)</p>
+                    <p class="one-shot">One shot my heart...</p>
                 </div>
             </div>
         </div>
@@ -82,25 +81,57 @@
 
     <!-- Start my-project -->
     <section id="my-project" class="my-project">
-        <p class="text-project">MY PROJECT</p>
-        <img class="form-pic" src="img/form.jpg" alt="form pic">
-        <div class="subtext-project">
-            <p class="upper-text">Это один из моих первых проектов <br> загруженных на GitHub, форма с <br> валидацией, благодаря этому проекту я <br> научился делать отзывчивую форму,<br> которая реагирует на <span class="error">ошибки</span> со стороны <br> пользователя, а так же она имеет адаптив.</p>
-            <p>Добавлю что с помощью GitHub я <br> загрузил свой сайт в общий доступ и <br> научился делать коммиты.</p>
-        </div>
-        <button class="sub-heading" id="click-to-hide">Чему я научился?</button>
-
+        <div class="container">
+            <p class="text-project">MY PROJECT</p>
+            <img class="form-pic" src="img/form.jpg" alt="form pic">
+            <div class="subtext-project">
+                <p class="upper-text">Это один из моих первых проектов <br> загруженных на GitHub, форма с <br> валидацией, благодаря этому проекту я <br> научился делать отзывчивую форму,<br> которая реагирует на <span class="error">ошибки</span> со стороны <br> пользователя, а так же она имеет адаптив.</p>
+                <p>Добавлю что с помощью GitHub я <br> загрузил свой сайт в общий доступ и <br> научился делать коммиты.</p>
+            </div>
+            <button class="sub-heading" id="click-to-hide">Чему я научился?</button>
             <ul id="hidden-element" class="experience">
                 <li>работа с git и GitHub.</li>
                 <li>регулярные выражения.</li>
                 <li>взаимодействия с DOM элементами.</li>
                 <li>медия запросы (подстраивания блоков под моб.версию).</li>
                 <li>знакомство с тегами form, checkbox, input, label, и т.д.</li>
+                <a class="look-me" href="https://designed-dany.github.io/formJS/">посмотреть проект</a>
             </ul>
+        </div>
+              
+       
     </section>
     <!-- End my-project -->
-    
+        <footer>
+            <div class="container contact-me">
+                <div class="social-send">
+                    <div class="social">
+                        <p class="social-text">Social Network</p>
+                        <div class="input-social">
+                            <a href="https://vk.com/danysqare"><img class="social-right size-icon-footer" src="svg/vk.svg" alt="vk"></a>
+                            <a href="https://t.me/Danila_Udalchikov"><img class="social-right size-icon-footer" src="svg/telegram.svg" alt="telegram"></a>
+                            <a href=""><img class="social-right size-icon-footer" src="svg/mail.svg" alt="mail"></a>
+                            <a href="https://github.com/Designed-Dany/about-me"><img class="size-icon-footer github" src="svg/github.svg" alt="GitHub"></a>
+                        </div> 
+                    </div>
+                    <div class="logo">
+                        <img width="100" height="100" src="svg/dd.svg" alt="logo">
+                    </div>
+                    <div class="send-email">
+                        <form action="#" id="form" class="form__body">
+                            <p class="send-email-text">Send email to contact</p>
+                            <input id="email" class="input-email _req" name="email" type="text">
+                            <button type="submit" class="send-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="reserved-text">All rights reserved <br>Designed-Dany <img src="svg/watermarka.svg" alt="watermarka"></p>
+            </div>
+            
+        </footer>
     <script src="main.js"></script>
     <a href="#" title="Вернуться к началу" class="topbutton">Top</a>
+        
+        
 </body>
 </html>
