@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-
+    
     <!-- START HEADER -->
     <header>
             <div class="container">
@@ -27,7 +27,7 @@
                     <a href=""><li class="home">HOME</li></a>
                     <a href="#about-me"><li class="abm">ABOUT ME</li></a>
                     <a href="#my-project"><li>MY PROJECT</li></a>
-                    <a href="#"><li>CONTACT ME</li></a>
+                    <a href="#contact"><li>CONTACT ME</li></a>
                  </ul>
              <div class="figures">
                 <button class="arrow-right-btn">Prev</button>
@@ -82,14 +82,14 @@
     <!-- Start my-project -->
     <section id="my-project" class="my-project">
         <div class="container">
-            <p class="text-project">MY PROJECT</p>
+            <h2 class="text-project">MY PROJECT</h2>
             <img class="form-pic" src="img/form.jpg" alt="form pic">
             <div class="subtext-project">
                 <p class="upper-text">Это один из моих первых проектов <br> загруженных на GitHub, форма с <br> валидацией, благодаря этому проекту я <br> научился делать отзывчивую форму,<br> которая реагирует на <span class="error">ошибки</span> со стороны <br> пользователя, а так же она имеет адаптив.</p>
                 <p>Добавлю что с помощью GitHub я <br> загрузил свой сайт в общий доступ и <br> научился делать коммиты.</p>
             </div>
-            <button class="sub-heading" id="click-to-hide">Чему я научился?</button>
-            <ul id="hidden-element" class="experience">
+            <button class="sub-heading">Чему я научился?</button>
+            <ul class="experience">
                 <li>работа с git и GitHub.</li>
                 <li>регулярные выражения.</li>
                 <li>взаимодействия с DOM элементами.</li>
@@ -97,13 +97,28 @@
                 <li>знакомство с тегами form, checkbox, input, label, и т.д.</li>
                 <a class="look-me" href="https://designed-dany.github.io/formJS/">посмотреть проект</a>
             </ul>
+            <h2 class="heading-school">Онлайн Школа</h2>
+            <img class="online-school" src="img/onlineSchool.png" alt="Онлайн школа">
+            <div class="subtext-project">
+                <br>
+                <br>
+                <p class="upper-text">Я реализовал переходы по меню, каждый <br> элемент меню, имеет свою страничку, <br> намеренно сделал это, потому что хотел <br> поработать в таком стиле. <br> <br> Cделал анимированное меню которое по клику <br> вскрывает и прячет меню. <br> <br> Дизайн сайта с начала логотипа до конца <br> страницы сделал в Figma. <br> <br> Самое главное чему научился - это popup и <br> отправка формы в телеграмм с помощью <br> подключенного скрипта axios.</p>
+            </div>
+            <button class="sub-heading">Чему я научился?</button>
+            <ul class="experience">
+                <li>Работа с разными страничками.</li>
+                <li>Придумывать и реализовывать дизайн в редакторе Figma.</li>
+                <li>Создавать попапы и красиво их оформлять.</li>
+                <li>Создания телеграмм бота и вытаскивание из него информации.</li>
+                <li>Работа со скриптом Axios</li>
+                <li>Работа с промисами такими как ".then", ".catch", ".finally".</li>
+                <a class="look-me" href="https://designed-dany.github.io/Online-School/index.html">посмотреть проект</a>
+            </ul>
         </div>
-              
-       
     </section>
     <!-- End my-project -->
         <footer>
-            <div class="container contact-me">
+            <div class="container contact-me" id="contact">
                 <div class="social-send">
                     <div class="social">
                         <p class="social-text">Social Network</p>
