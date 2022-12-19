@@ -47,6 +47,38 @@
                 x.style.display = "none"}
     };
 
+    const TOKEN = "5596693553:AAFqaBrdRceNWcEJm4SsF7JRAQNPPvyeKCg"
+    const CHAT_ID = "-1001613023416"
+    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+
+    document.getElementById('form').addEventListener('submit', function (e) {
+
+        e.preventDefault()
+
+            let message = `<b>Предложение сотрудничества</b>\n`
+                message += `<b>Почта: </b> ${this.email.value}`
+
+            axios.post(URI_API, {
+                chat_id: CHAT_ID,
+                parse_mode: "html",
+                text: message
+            })
+
+            .then((res) => {
+                this.email.value = ''
+            })
+
+            .catch((err) => {
+                console.warn(err)
+            })
+
+            .finally(() => {
+                alert('Почта отправлена, ждите ответа на вашу почту!')
+                console.log('Сообщение доставлено');
+            })
+
+
+    })
 
 
 
