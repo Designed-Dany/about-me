@@ -1,11 +1,9 @@
 
     let offset = 0; // смещение от левого края;
     const sliderLine = document.querySelector('.slider-line');
-    let container = document.querySelector('.container');
     let alertError = document.querySelector('.error');
     let inputEmail = document.querySelector('.input-email');
     let formInputs = document.querySelectorAll('.js-input');
-
     
     document.querySelector('.arrow-left-btn').addEventListener('click', function() {
         offset = offset + 750;
@@ -76,11 +74,7 @@
                 alert('Почта отправлена, ждите ответа на вашу почту!')
                 console.log('Сообщение доставлено');
             })
-
-
     })
-
-
 
 
     
